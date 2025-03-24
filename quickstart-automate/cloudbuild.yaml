@@ -16,6 +16,7 @@
 steps:
   - name: golang
     args: ['go', 'run', 'quickstart-automate/main.go']
+logsBucket: 'henneo-curso-genai25-build-logs-bucket'
 options:
-  logging: CLOUD_LOGGING_ONLY
+  logging: GCS_ONLY
 # [END cloudbuild_quickstart_automate]
